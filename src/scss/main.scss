@@ -83,6 +83,12 @@ body {
   letter-spacing: 0.56px;
 }
 
+.indispensablefooter {
+  font-family: "Nunito Sans";
+  color: var(--gris, #979797);
+  font-size: 10px;
+}
+
 .bouton {
   display: flex;
   align-items: center;
@@ -109,7 +115,6 @@ body {
   }
 
   .navigation {
-    /*espacer */
     display: flex;
     gap: 20px;
     align-items: flex-start;
@@ -161,7 +166,7 @@ body {
 }
 
 .vins {
-  /*Centrer la bouteille + lumière derrière la bouteille*/
+  /*lumière derrière la bouteille*/
 
   .imagevin {
     width: 268px;
@@ -300,6 +305,55 @@ body {
       flex-direction: column;
       align-items: flex-start;
       gap: 18px;
+    }
+
+    .réseaux-sociaux {
+      display: flex;
+      width: 109px;
+      justify-content: flex-end;
+      align-items: flex-end;
+      align-content: flex-end;
+      gap: 18px 5px;
+      flex-wrap: wrap;
+
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+  }
+
+  .séparation {
+    width: 92%;
+    height: 1px;
+    background: rgba(151, 151, 151, 0.4);
+    position: absolute;
+    margin: 14 0 22 0px;
+  }
+
+  .indispensable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+
+    .gauche {
+      display: flex;
+      align-items: center;
+      gap: 41px;
+
+      img {
+        width: 35.385px;
+        height: 40px;
+      }
+    }
+
+    .droite {
+      display: flex;
+      width: 190px;
+      align-items: center;
+      gap: 1px;
     }
   }
 }
