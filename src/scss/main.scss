@@ -87,6 +87,10 @@ body.wine {
   mix-blend-mode: difference;
   position: fixed;
   z-index: 1000;
+  top: 150px;
+  left: 0;
+  right: 0;
+  pointer-events: none;
 }
 
 .titre-footer {
@@ -203,6 +207,7 @@ body.wine {
 
 .vins {
   /*lumière derrière la bouteille*/
+  position: relative;
 
   .imagevin {
     width: 100%;
@@ -216,13 +221,12 @@ body.wine {
     align-items: flex-start;
     gap: 18px;
     justify-content: flex-end;
-    position: relative;
 
     .forme {
       opacity: 0.5;
       position: absolute;
       top: -200px;
-      right: -300px;
+      right: 0px;
       z-index: -1;
     }
   }
@@ -364,6 +368,7 @@ body.wine {
   background-repeat: no-repeat;
   width: 100%;
   margin-top: 5%;
+  padding-bottom: 20px;
 
   .informations {
     display: flex;
@@ -478,10 +483,10 @@ body.wine {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 214px;
   gap: 20px;
   position: relative;
   z-index: 2;
+  transform: translateY(-180);
 
   .bouton {
     display: inline-flex;
@@ -548,23 +553,29 @@ body.wine {
   transform: scale(1.2);
 }
 
-.text-image-container {
-  position: relative;
-  width: 100%;
-  height: 1075px;
-  display: flex;
-  align-items: start;
-  margin-top: 15%;
+.texte-detail {
+  margin-top: 170px;
+
+  .titre-footer {
+    transform: translateX(-70);
+    margin-bottom: 40px;
+  }
+
+  .texte {
+    transform: translateX(-70);
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
 }
 
-.mockup {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-image: url("../Image/mockup.png");
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
+.image-detail {
+  padding-top: 200px;
+
+  .imagee {
+    margin-left: calc((100vw - 1320px) / 2 * -1);
+
+    @media (max-width: 1399px) {
+      margin-left: calc((100vw - 1140px) / 2 * -1);
+    }
+  }
 }
