@@ -32,6 +32,10 @@ body.wine {
   background-color: black;
 }
 
+body.wine2 {
+  background-color: black;
+}
+
 // .row + .row {
 //   margin-top: 16px;
 // }
@@ -555,6 +559,8 @@ body.wine {
 
 .texte-detail {
   margin-top: 170px;
+  mix-blend-mode: difference;
+  position: relative;
 
   .titre-footer {
     transform: translateX(-70);
@@ -565,6 +571,13 @@ body.wine {
     transform: translateX(-70);
     margin-bottom: 40px;
     margin-left: 10px;
+  }
+  .forme {
+    opacity: 0.5;
+    position: absolute;
+    top: -400px;
+    right: 0px;
+    z-index: -1;
   }
 }
 
@@ -579,3 +592,10 @@ body.wine {
     }
   }
 }
+
+/*reste a faire:
+- effet de parallaxe
+- finir les liens (header + bouteille de vins)
+- ajouter encore des formes
+FIN
+*/
